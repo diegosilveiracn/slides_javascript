@@ -1,0 +1,138 @@
+\documentclass[aspectratio=169]{beamer} % O parâmetro aspectratio com valar 16:9 deixa o slide em widescreen
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{textcomp}
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+\lstset{
+language=html,
+upquote=true,
+basicstyle=\ttfamily,%\tiny
+backgroundcolor=\color{white},
+keywordstyle=\color{blue}\bfseries,
+stringstyle=\color{red},
+commentstyle=\color{green},
+%morecomment=[s][\color{green}]{/**}{*/},
+showspaces=false,
+showstringspaces=false,
+morekeywords={video,controls, audio, autoplay, download},
+literate=
+{á}{{\'a}}1
+{Á}{{\'A}}1
+{à}{{\`a}}1 
+{À}{{\`A}}1
+{â}{{\^a}}1 
+{Â}{{\^A}}1
+{ã}{{\~a}}1
+{Ã}{{\~A}}1
+{ä}{{\"a}}1
+{Ä}{{\"A}}1
+{é}{{\'e}}1
+{É}{{\'E}}1
+{è}{{\`e}}1
+{È}{{\`E}}1
+{ê}{{\^e}}1
+{Ê}{{\^E}}1
+{ẽ}{{\~e}}1
+{Ẽ}{{\~E}}1 
+{ë}{{\"e}}1
+{Ë}{{\"E}}1
+{í}{{\'i}}1
+{Í}{{\'I}}1
+{ì}{{\`i}}1
+{Ì}{{\`I}}1
+{î}{{\^i}}1
+{Î}{{\^I}}1
+{ĩ}{{\~i}}1
+{Ĩ}{{\~I}}1
+{ï}{{\"i}}1
+{Ï}{{\"I}}1
+{ó}{{\'o}}1
+{Ó}{{\'O}}1
+{ò}{{\`o}}1
+{Ò}{{\`O}}1
+{ô}{{\^o}}1
+{Ô}{{\^O}}1
+{õ}{{\~o}}1
+{Õ}{{\~O}}1
+{ö}{{\"o}}1
+{Ö}{{\"O}}1
+{ú}{{\'u}}1
+{Ú}{{\'U}}1
+{ù}{{\`u}}1
+{Ù}{{\`U}}1
+{û}{{\^u}}1
+{Û}{{\^U}}1
+{ũ}{{\~u}}1
+{Ũ}{{\~U}}1
+{ü}{{\"u}}1
+{Ü}{{\"U}}1
+{ç}{{\c{c}}}1
+{Ç}{{\c{C}}}1
+}
+
+\title[JavaScritp]{JavaScritp}
+
+\author[Diego S. C. Nascimento]{Diego Silveira Costa Nascimento}
+
+\institute[IFRN]{
+Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte\\
+diego.nascimento@ifrn.edu.br
+}
+
+\date[\today]{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\includegraphics[scale=0.2]{img/IFRN}
+	\titlepage
+\end{frame}
+
+\logo{\includegraphics[scale=0.1]{img/IFRN}}
+
+\begin{frame}
+	\frametitle{Ementa}
+  	\tableofcontents
+\end{frame}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\frametitle{Ementa}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\section{Introdução}
+
+\begin{frame}
+	\frametitle{JavaScript}
+	
+	\begin{itemize}
+		\item É a linguagem de programação que dá comportamento as páginas web;
+		\item Foi criado por Brendan Eich em 1995;
+		\item Possui características multiparadigma e dinâmica; e
+		\item Funciona no lado do cliente (diretamente no navegador).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{}
+
+\begin{itemize}
+	\item 
+\end{itemize}\vfill
+
+\begin{exampleblock}{Exemplos}
+	\begin{lstlisting}
+
+	\end{lstlisting}
+\end{exampleblock}
+\end{frame}
+
+\end{document}
