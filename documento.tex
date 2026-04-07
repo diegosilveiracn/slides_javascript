@@ -121,18 +121,107 @@ diego.nascimento@ifrn.edu.br
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{}
+\begin{frame}
+\frametitle{Declaração dos scripts}
 
 \begin{itemize}
-	\item 
-\end{itemize}\vfill
+	\item O código JavaScript pode ser declarado de três formas: 
+	\begin{enumerate}
+		\item Inline;
+		\item Incorporado; ou
+		\item Externo.
+	\end{enumerate}
+\end{itemize}
+\end{frame}
 
-\begin{exampleblock}{Exemplos}
-	\begin{lstlisting}
+\begin{frame}[fragile]
+	\frametitle{Script Inline}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<input type="button" onclick="window.alert('Oi, mundo!');" 
+value="Clique aqui">
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
 
-	\end{lstlisting}
-\end{exampleblock}
+
+\begin{frame}[fragile]
+	\frametitle{Script incorporado}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<script>
+	window.alert('Oi, mundo!');
+</script>
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Script externo}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+window.alert('Oi, mundo!');			
+		\end{lstlisting}
+		
+		\begin{lstlisting}
+<script src="script.js"></script>
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\section{Saída}
+
+\begin{frame}[fragile]
+	\frametitle{Escrevendo no documento}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<p>
+   <script>document.write('Oi, mundo!');</script>
+</p>
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Manipulando um elemento}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<p id="paragrafo"></p>
+
+<script>
+  document.getElementById('paragrafo').innerHTML = 'Oi, mundo!';
+</script>
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Janela de alerta}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<script>
+   window.alert('Oi, mundo!');
+</script>
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Escrevendo no console}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<script>
+   console.log('Oi, mundo!');
+</script>
+		\end{lstlisting}
+	\end{exampleblock}
 \end{frame}
 
 \end{document}
