@@ -76,7 +76,7 @@ literate=
 {Ç}{{\c{C}}}1
 }
 
-\title[JavaScritp]{JavaScritp}
+\title[JavaScript]{JavaScript}
 
 \author[Diego S. C. Nascimento]{Diego Silveira Costa Nascimento}
 
@@ -139,12 +139,11 @@ diego.nascimento@ifrn.edu.br
 	
 	\begin{exampleblock}{Exemplo}
 		\begin{lstlisting}
-<input type="button" onclick="window.alert('Oi, mundo!');" 
-value="Clique aqui">
+<input type="button" value="Clique" 
+onclick="window.alert('Oi, mundo!');" >
 		\end{lstlisting}
 	\end{exampleblock}
 \end{frame}
-
 
 \begin{frame}[fragile]
 	\frametitle{Script incorporado}
@@ -240,8 +239,8 @@ window.alert('Oi, mundo!');
 	
 	\begin{exampleblock}{Exemplo}
 		\begin{lstlisting}
-let a, b
-const  media = 60 
+let a, b;
+const  media = 60;
 		\end{lstlisting}
 	\end{exampleblock}
 \end{frame}
@@ -288,7 +287,6 @@ typeof {'s':'Sim','n':'Não'}
 	\begin{exampleblock}{Exemplo}
 		\begin{lstlisting}
 let nome = prompt('Qual o seu nome?');
-
 alert('Oi, ${nome}!');
 		\end{lstlisting}
 	\end{exampleblock}
@@ -312,6 +310,40 @@ alert('Oi, ${nome}!');
 		\begin{lstlisting}
 let a = 3, b = 5, soma;
 soma = a + b;
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Função}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+<input type="button" value="Clique" onclick="mensagem();">
+
+<script>
+   function mensagem(){
+      window.alert('Oi, mundo!');
+   }
+</script>
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Lendo valor do formulário}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+Nome <input type="text" id="nome"><br>
+<input type="button" value="Clique" onclick="mensagem();">
+
+<script>
+   function mensagem(){
+      let nome = document.getElementById('nome').value;
+      window.alert('Oi, ' + nome + '!');
+   }
+</script>
 		\end{lstlisting}
 	\end{exampleblock}
 \end{frame}
