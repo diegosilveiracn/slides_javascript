@@ -224,4 +224,96 @@ window.alert('Oi, mundo!');
 	\end{exampleblock}
 \end{frame}
 
+\section{Entrada}
+
+\begin{frame}[fragile]
+	\frametitle{Variável e operador de atribuição}
+	
+	\begin{itemize}
+		\item A declaração de variável pode acontecer de duas formas:
+		\begin{enumerate}
+			\item let; e
+			\item const.
+		\end{enumerate}
+		\item Atribuição utiliza o símbolo \structure{=}.
+	\end{itemize} \vfill
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let a, b
+const  media = 60 
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Tipos de dados}
+	
+	\begin{columns}[c]
+	
+	\column{.3\textwidth}
+	\begin{itemize}
+		\item Primitivo:
+		\begin{itemize}
+			\item String;
+			\item Number;
+			\item Boolean;
+			\item Null;
+			\item Undefined;
+			\item BigInt;
+			\item Symbol;
+		\end{itemize}
+		\item Estruturado:
+		\begin{itemize}
+			\item Literais; e
+			\item Array.
+		\end{itemize}
+	\end{itemize} \vfill
+	
+	\column{.5\textwidth}
+	\begin{exampleblock}{Exemplos}
+		\begin{lstlisting}
+typeof 'IFRN'
+typeof 2.5
+typeof true
+typeof {'s':'Sim','n':'Não'}
+		\end{lstlisting}
+	\end{exampleblock}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Prompt no console}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let nome = prompt('Qual o seu nome?');
+
+alert('Oi, ${nome}!');
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Operadores aritméticos}
+	
+	\begin{itemize}
+		\item Adição: \structure{+};
+		\item Subtração: \structure{-};
+		\item Multiplicação: \structure{*}; 
+		\item Divisão: \structure{/};
+		\item Módulo: \structure{\%};
+		\item Exponenciação:  \structure{**};
+		\item Incremento: \structure{++}; e
+		\item Decremento: \structure{- -}.
+	\end{itemize}\vfill
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let a = 3, b = 5, soma;
+soma = a + b;
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
 \end{document}
