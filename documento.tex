@@ -348,4 +348,116 @@ Nome <input type="text" id="nome"><br>
 	\end{exampleblock}
 \end{frame}
 
+
+\section{Decisão}
+
+\begin{frame}
+	\frametitle{Estruturas de decisão}
+	
+	\begin{itemize}
+		\item if/else; e
+		\item switch.
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{IF}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let numero = 4;
+if (numero >= 0) {
+	document.write('O número é positivo');
+}else{
+   document.write('O número é negativo');
+}
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Switch}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let situacao = 1;
+switch(sexo):
+   case 0:
+      document.write('Reprovado');
+      break;
+   case 1:
+      document.write('Aprovado');
+      break;
+   default:
+      document.write('Situação inválida');
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\section{Repetição}
+
+\begin{frame}
+	\frametitle{Estruturas de decisão}
+	
+	\begin{itemize}
+		\item for;
+		\item while;
+		\item do/while; e
+		\item forEach.
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{For}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+for(let i = 0; i < 5; i++){
+   document.write(i);
+}
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{While}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let i = 0;
+while(i < 5){
+   document.write(i);
+   i++;
+}
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Do/While}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+let i = 0;
+do{
+   document.write(i);
+   i++;
+}while (i < 5);
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{forEach}
+	
+	\begin{exampleblock}{Exemplo}
+		\begin{lstlisting}
+frutas = ['maçã','banana','laranja'];
+frutas.forEach((fruta, index) => {
+   document.write('${index}:${fruta}');
+});
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
 \end{document}
